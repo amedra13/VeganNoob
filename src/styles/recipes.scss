@@ -1,8 +1,30 @@
-.recipe {
-	height: 600px;
+.recipeList {
+	display: flex;
+	flex-direction: column;
+	.recipeList__list {
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: scroll;
+		&::-webkit-scrollbar {
+			display: none; /* Safari and Chrome */
+		}
+	}
+}
 
-	border: 2px solid $main-color;
+.recipeCard {
+	min-height: 600px;
+	width: 350px;
+	border: 1px solid $main-color;
+	border-radius: 8px;
+	margin: 20px 30px;
+	flex-shrink: 0;
+	transition: all 200ms ease-in-out;
 	img {
-		object-fit: scale-down;
+		object-fit: contain;
+		width: 100%;
+		border-radius: 8px;
+	}
+	&:hover {
+		transform: scale(1.05);
 	}
 }

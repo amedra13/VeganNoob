@@ -1,14 +1,13 @@
 import './styles/main.scss';
 import BrandImage from './BrandImage';
-import Recipe from './Recipe';
+import RecipeList from './RecipeList';
 
 function App() {
 	return (
 		<div className="app">
 			<BrandImage />
-			<div className="appContent">
-				<Recipe />
-			</div>
+			<RecipeList />
+			<RecipeList />
 		</div>
 	);
 }
