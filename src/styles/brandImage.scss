@@ -1,8 +1,12 @@
 .brandImage {
-	@include center-container;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	background-color: $main-color;
-	height: 15%;
 	* {
 		margin: 10px;
+	}
+	.links {
+		@include center-row;
 	}
 }

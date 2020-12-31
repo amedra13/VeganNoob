@@ -1,0 +1,8 @@
+.recipe {
+	height: 600px;
+
+	border: 2px solid $main-color;
+	img {
+		object-fit: scale-down;
+	}
+}

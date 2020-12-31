@@ -5,9 +5,14 @@
 $main-color: #77bfa3;
 $second-color: #bfd8bd;
 
-@mixin center-container {
+@mixin center-column {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+@mixin center-row {
+	display: flex;
 	align-items: center;
 	justify-content: center;
 }
@@ -17,9 +22,13 @@ $second-color: #bfd8bd;
 	height: 100vh;
 	width: 100vw;
 	overflow: hidden;
+	.appContent {
+		@include center-column;
+	}
 }
 .app::-webkit-scrollbar {
 	display: none; /* Safari and Chrome */
 }
 
 @import './brandImage.scss';
+@import './recipes.scss';
