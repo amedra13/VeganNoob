@@ -1,0 +1,8 @@
+.brandImage {
+	@include center-container;
+	background-color: $main-color;
+	height: 15%;
+	* {
+		margin: 10px;
+	}
+}
