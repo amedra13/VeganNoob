@@ -18,13 +18,14 @@
 	border-radius: 8px;
 	margin: 20px 30px;
 	flex-shrink: 0;
-	transition: all 200ms ease-in-out;
+	overflow: hidden;
 	img {
 		object-fit: contain;
 		width: 100%;
 		border-radius: 8px;
-	}
-	&:hover {
-		transform: scale(1.05);
+		transition: all 200ms ease-in-out;
+		&:hover {
+			transform: scale(1.05);
+		}
 	}
 }

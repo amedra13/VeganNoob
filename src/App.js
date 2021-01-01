@@ -1,13 +1,10 @@
 import './styles/main.scss';
-import BrandImage from './BrandImage';
-import RecipeList from './RecipeList';
+import Main from './views/Main';
 
 function App() {
 	return (
 		<div className="app">
-			<BrandImage />
-			<RecipeList />
-			<RecipeList />
+			<Main />
 		</div>
 	);
 }
