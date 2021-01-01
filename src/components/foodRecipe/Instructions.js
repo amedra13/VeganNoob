@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom';
 
 const Instructions = () => {
 	return (
@@ -96,7 +97,9 @@ const Instructions = () => {
 			</div>
 
 			<div className="instruction__links">
-				<Button variant="outlined">Home</Button>
+				<Button variant="outlined" component={Link} to="/">
+					Home
+				</Button>
 				<Button variant="outlined">Check out Video</Button>
 			</div>
 		</div>
