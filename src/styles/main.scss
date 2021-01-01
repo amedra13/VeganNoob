@@ -16,6 +16,11 @@ $second-color: #bfd8bd;
 	align-items: center;
 	justify-content: center;
 }
+@mixin spread-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 
 .app {
 	background-color: $second-color;
@@ -30,3 +35,4 @@ $second-color: #bfd8bd;
 
 @import './brandImage.scss';
 @import './recipes.scss';
+@import './instructions.scss';

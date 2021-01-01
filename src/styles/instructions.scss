@@ -1,0 +1,40 @@
+// .instructions {
+// }
+
+.instructions__description {
+	height: 100px;
+	text-align: center;
+	@include center-row;
+}
+.instructions__ing {
+	padding: 10px 0;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	h1 {
+		text-align: center;
+	}
+	.instructions__ingContainer {
+		div {
+			width: 70%;
+			margin: 0 auto;
+			li {
+				list-style-type: none;
+			}
+		}
+	}
+}
+
+.instructions__steps {
+	li {
+		list-style-type: none;
+	}
+}
+
+.instruction__links {
+	@include center-row;
+	border-top: 1px solid black;
+	padding: 20px;
+	* {
+		margin: 0 20px !important;
+	}
+}

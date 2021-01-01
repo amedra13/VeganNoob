@@ -29,3 +29,41 @@
 		}
 	}
 }
+
+.foodRecipe {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.recipeHeader {
+	@include center-column;
+	.recipeHeader__title {
+		text-align: center;
+		margin: 10px;
+		h3 {
+			font-style: italic;
+			color: rgb(154, 7, 252);
+		}
+	}
+	.recipeHeader__prep {
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		width: 100%;
+		@include spread-row;
+		* {
+			display: flex;
+			margin: 5px;
+		}
+	}
+}
+
+.recipeImg {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	img {
+		height: 80vh;
+		object-fit: contain;
+		margin: 0 auto;
+	}
+}
