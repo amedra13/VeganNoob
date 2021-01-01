@@ -1,5 +1,6 @@
 import React from 'react';
-import Tacos from './images/tacos.jpg';
+import Tacos from '../../images/tacos.jpg';
+import { Link } from 'react-router-dom';
 
 const RecipeCard = () => {
 	return (
@@ -10,7 +11,7 @@ const RecipeCard = () => {
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua.
 			</h6>
-			<button>Check it Out</button>
+			<Link to="/recipe/33">Tacos</Link>
 		</div>
 	);
 };

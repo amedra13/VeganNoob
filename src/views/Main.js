@@ -1,11 +1,9 @@
 import React from 'react';
-import BrandImage from '../BrandImage';
-import RecipeList from '../RecipeList';
+import RecipeList from '../components/main/RecipeList';
 
 const Main = () => {
 	return (
 		<div className="main">
-			<BrandImage />
 			<RecipeList />
 			<RecipeList />
 		</div>
