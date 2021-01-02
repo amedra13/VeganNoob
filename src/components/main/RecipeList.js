@@ -8,13 +8,13 @@ const RecipeList = () => {
 				<h1>My Favorites</h1>
 			</div>
 			<div className="recipeList__list">
-				<RecipeCard />
-				<RecipeCard />
-				<RecipeCard />
-				<RecipeCard />
-				<RecipeCard />
-				<RecipeCard />
-				<RecipeCard />
+				<RecipeCard dish="vegan-pizza" />
+				<RecipeCard dish="vegan-pizza" />
+				<RecipeCard dish="vegan-pizza" />
+				<RecipeCard dish="vegan-dumplings" />
+				<RecipeCard dish="vegan-dumplings" />
+				<RecipeCard dish="vegan-dumplings" />
+				<RecipeCard dish="vegan-dumplings" />
 			</div>
 		</div>
 	);

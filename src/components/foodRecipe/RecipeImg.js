@@ -1,10 +1,9 @@
 import React from 'react';
-import Dumplings from '../../images/vegan-dumplings.jpg';
 
-const RecipeImg = () => {
+const RecipeImg = ({ image }) => {
 	return (
 		<div className="recipeImg">
-			<img src={Dumplings} alt="placeholder" />
+			<img src={image} alt="placeholder" />
 		</div>
 	);
 };
