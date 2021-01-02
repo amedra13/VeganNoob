@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
 
-const Instructions = () => {
+const Instructions = ({ steps }) => {
 	return (
 		<div className="instructions">
 			<div className="instructions__description">
@@ -51,48 +51,9 @@ const Instructions = () => {
 			<div className="instructions__steps">
 				<h1>Steps</h1>
 				<ul>
-					<li>
-						Add the roasting ingredients to a large baking tray then place the
-						cauliflower in the centre, so that it’s surrounded by the roasting
-						vegetables. Brush the jerk marinade mixture over the cauliflower
-						generously.
-					</li>
-					<li>
-						Add the roasting ingredients to a large baking tray then place the
-						cauliflower in the centre, so that it’s surrounded by the roasting
-						vegetables. Brush the jerk marinade mixture over the cauliflower
-						generously.
-					</li>
-					<li>
-						Add the roasting ingredients to a large baking tray then place the
-						cauliflower in the centre, so that it’s surrounded by the roasting
-						vegetables. Brush the jerk marinade mixture over the cauliflower
-						generously.
-					</li>
-					<li>
-						Add the roasting ingredients to a large baking tray then place the
-						cauliflower in the centre, so that it’s surrounded by the roasting
-						vegetables. Brush the jerk marinade mixture over the cauliflower
-						generously.
-					</li>
-					<li>
-						Add the roasting ingredients to a large baking tray then place the
-						cauliflower in the centre, so that it’s surrounded by the roasting
-						vegetables. Brush the jerk marinade mixture over the cauliflower
-						generously.
-					</li>
-					<li>
-						Add the roasting ingredients to a large baking tray then place the
-						cauliflower in the centre, so that it’s surrounded by the roasting
-						vegetables. Brush the jerk marinade mixture over the cauliflower
-						generously.
-					</li>
-					<li>
-						Add the roasting ingredients to a large baking tray then place the
-						cauliflower in the centre, so that it’s surrounded by the roasting
-						vegetables. Brush the jerk marinade mixture over the cauliflower
-						generously.
-					</li>
+					{steps?.map((step) => (
+						<li>{step}</li>
+					))}
 				</ul>
 			</div>
 
