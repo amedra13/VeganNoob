@@ -5,15 +5,10 @@ const RecipeList = () => {
 	return (
 		<div className="recipeList">
 			<div>
-				<h1>My Favorites</h1>
+				<h1>Check out my Recipes!</h1>
 			</div>
 			<div className="recipeList__list">
 				<RecipeCard dish="vegan-pizza" />
-				<RecipeCard dish="vegan-pizza" />
-				<RecipeCard dish="vegan-pizza" />
-				<RecipeCard dish="vegan-dumplings" />
-				<RecipeCard dish="vegan-dumplings" />
-				<RecipeCard dish="vegan-dumplings" />
 				<RecipeCard dish="vegan-dumplings" />
 			</div>
 		</div>

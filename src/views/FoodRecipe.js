@@ -22,7 +22,11 @@ const FoodRecipe = () => {
 		<div className="foodRecipe">
 			<RecipeHeader recipe={recipe} />
 			<RecipeImg image={recipe?.image} />
-			<Instructions steps={recipe?.steps} />
+			<Instructions
+				steps={recipe?.steps}
+				ingredients={recipe?.ingredients}
+				description={recipe?.description}
+			/>
 		</div>
 	);
 };
