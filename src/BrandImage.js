@@ -1,5 +1,6 @@
 import React from 'react';
 import Icon from './images/icon.png';
+import { Link } from 'react-router-dom';
 
 const BrandImage = () => {
 	return (
@@ -8,11 +9,11 @@ const BrandImage = () => {
 				<img src={Icon} alt="placeholder" />
 			</div>
 			<div>
-				<h1>VeganNoob</h1>
-				<h4>Welcome to my website!</h4>
+				<h1>Veganners</h1>
+				<h4>Recipes for all levels! From veganners to experts.</h4>
 			</div>
 			<div className="links">
-				<h4>Recipes</h4>
+				<Link to="/recipes">Recipes</Link>
 				<h4>About</h4>
 				<h4>Contact</h4>
 			</div>

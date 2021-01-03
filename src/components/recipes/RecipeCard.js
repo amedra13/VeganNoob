@@ -16,7 +16,7 @@ const RecipeCard = ({ dish }) => {
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua.
 			</h6>
-			<Link to={`/recipe/${dish}`}>{formatTitle(dish)}</Link>
+			<Link to={`/recipes/${dish}`}>{formatTitle(dish)}</Link>
 		</div>
 	);
 };
