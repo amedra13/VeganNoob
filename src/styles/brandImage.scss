@@ -2,11 +2,15 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	height: 100px;
 	background-color: $main-color;
 	* {
 		margin: 10px;
 	}
 	.links {
 		@include center-row;
+	}
+	.hidden {
+		visibility: hidden;
 	}
 }

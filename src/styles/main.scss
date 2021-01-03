@@ -33,6 +33,7 @@ $second-color: #bfd8bd;
 	display: none; /* Safari and Chrome */
 }
 
+@import './home.scss';
 @import './brandImage.scss';
 @import './recipes.scss';
 @import './instructions.scss';
