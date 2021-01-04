@@ -10,13 +10,18 @@ const RecipeCard = ({ dish }) => {
 	};
 	return (
 		<div className="recipeCard">
-			<img src={Tacos} alt="" />
-			<h2>{formatTitle(dish)}</h2>
-			<h6>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.
-			</h6>
-			<Link to={`/recipes/${dish}`}>{formatTitle(dish)}</Link>
+			<div className="recipeCard__imgContainer">
+				<img src={Tacos} alt="" />
+			</div>
+			<div className="recipeCard__description">
+				<Link to={`/recipes/${dish}`} className="recipeCard__link">
+					{formatTitle(dish)}
+				</Link>
+				<h6>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</h6>
+			</div>
 		</div>
 	);
 };

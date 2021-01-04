@@ -12,20 +12,38 @@
 }
 
 .recipeCard {
-	min-height: 600px;
+	height: 600px;
 	width: 350px;
 	border: 1px solid $main-color;
 	border-radius: 8px;
 	margin: 20px 30px;
-	flex-shrink: 0;
-	overflow: hidden;
-	img {
-		object-fit: contain;
-		width: 100%;
-		border-radius: 8px;
-		transition: all 200ms ease-in-out;
-		&:hover {
-			transform: scale(1.05);
+	.recipeCard__imgContainer {
+		height: 85%;
+		overflow: hidden;
+		img {
+			object-fit: contain;
+			width: 100%;
+			border-radius: 8px;
+			transition: all 200ms ease-in-out;
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
+	.recipeCard__description {
+		@include center-column;
+		font-style: italic;
+		text-decoration: none;
+		height: 15%;
+		text-align: center;
+		.recipeCard__link {
+			text-decoration: none;
+			color: black;
+			font-weight: bold;
+			font-size: 20px;
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 }

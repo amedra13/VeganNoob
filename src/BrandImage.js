@@ -9,8 +9,8 @@ const BrandImage = () => {
 				<img className="hidden" src={Icon} alt="placeholder" />
 			</div>
 			<div>
-				<h1>Veganners</h1>
-				<h4>Recipes for all levels! From veganners to experts.</h4>
+				<h1>Loi's Version</h1>
+				<h4>My version take on my favorite vegan recipes</h4>
 			</div>
 			<div className="links">
 				<Link to="/recipes">Recipes</Link>
