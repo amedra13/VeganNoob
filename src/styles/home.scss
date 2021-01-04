@@ -15,3 +15,28 @@
 		}
 	}
 }
+
+.footer {
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.footer__container {
+	border-radius: 5px;
+	margin: 10px;
+	background-color: rgba(0, 0, 0, 0.548);
+	ul {
+		height: 100%;
+		list-style-type: none;
+		padding: 0 10px;
+		color: pink;
+		@include spread-row;
+	}
+	.footer__icon,
+	.footer__button {
+		color: pink;
+	}
+}

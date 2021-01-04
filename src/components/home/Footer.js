@@ -1,45 +1,65 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles((theme) => ({
-	root: {
-		flexGrow: 1,
-		border: '2px solid red',
-		width: '90%',
-		margin: '20px auto',
-		backgroundColor: '#77bfa3',
-	},
-	list: {
-		listStyle: 'none',
-	},
-	listItem: {},
-}));
+import { Link } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 const Footer = () => {
-	const classes = useStyles();
-
 	return (
-		<Grid container justify="space-evenly" className={classes.root} spacing={2}>
-			<Grid item>
-				<ul className={classes.list}>
-					<li>Home</li>
-					<li>About</li>
-					<li>Recipes</li>
-					<li>Contact</li>
-					<li>FAQs</li>
+		<div className="footer">
+			<div className="footer__container">
+				<ul>
+					<li>
+						<Button className="footer__button" component={Link} to="/">
+							Home
+						</Button>
+					</li>
+					<li>
+						<Button className="footer__button">About</Button>
+					</li>
+					<li>
+						<Button className="footer__button" component={Link} to="/recipes">
+							Recipes
+						</Button>
+					</li>
+					<li>
+						<Button className="footer__button">contact</Button>
+					</li>
+					<li>
+						<Button className="footer__button">FAQs</Button>
+					</li>
 				</ul>
-			</Grid>
-			<Grid item>
-				<h1>Follow Me!</h1>
-				<ul className={classes.list}>
-					<li>Youtube</li>
-					<li>Instagram</li>
-					<li>Facebook</li>
-					<li>Twitter</li>
+			</div>
+			<div className="footer__container">
+				<ul>
+					<li>
+						<h4>Find me on:</h4>
+					</li>
+					<li>
+						<Button startIcon={<FacebookIcon />} className="footer__icon">
+							Facebook
+						</Button>
+					</li>
+					<li>
+						<Button className="footer__icon" startIcon={<InstagramIcon />}>
+							Instagram
+						</Button>
+					</li>
+					<li>
+						<Button className="footer__icon" startIcon={<YouTubeIcon />}>
+							YouTube
+						</Button>
+					</li>
+					<li>
+						<Button className="footer__icon" startIcon={<TwitterIcon />}>
+							Twitter
+						</Button>
+					</li>
 				</ul>
-			</Grid>
-		</Grid>
+			</div>
+		</div>
 	);
 };
 

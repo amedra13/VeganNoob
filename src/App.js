@@ -3,6 +3,7 @@ import BrandImage from './BrandImage';
 import Home from './views/Home';
 import Recipes from './views/Recipes';
 import FoodRecipe from './views/FoodRecipe';
+import Footer from './components/home/Footer';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -16,6 +17,7 @@ function App() {
 					<Route exact path="/recipes" component={Recipes} />
 					<Route exact path="/recipes/:id" component={FoodRecipe} />
 				</Switch>
+				<Footer />
 			</div>
 		</Router>
 	);
