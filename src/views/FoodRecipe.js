@@ -11,10 +11,10 @@ const FoodRecipe = () => {
 
 	useEffect(() => {
 		db.collection('recipes')
-			.doc(`${id}`)
+			.where('id', '==', id)
 			.get()
 			.then((result) => {
-				setRecipe(result.data());
+				setRecipe(result.docs[0].data());
 			});
 	}, [id]);
 

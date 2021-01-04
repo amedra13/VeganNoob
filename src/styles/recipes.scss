@@ -14,16 +14,16 @@
 .recipeCard {
 	height: 600px;
 	width: 350px;
-	border: 1px solid $main-color;
 	border-radius: 8px;
 	margin: 20px 30px;
 	.recipeCard__imgContainer {
 		height: 85%;
 		overflow: hidden;
+		border-radius: 8px;
 		img {
-			object-fit: contain;
+			object-fit: cover;
 			width: 100%;
-			border-radius: 8px;
+			height: 100%;
 			transition: all 200ms ease-in-out;
 			&:hover {
 				transform: scale(1.05);
