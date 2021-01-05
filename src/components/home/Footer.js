@@ -32,7 +32,15 @@ const Footer = () => {
 				</div>
 			</div>
 			<div className="footer__contact">
-				<h1>Contact Me</h1>
+				<h1>Lets Work Together</h1>
+				<form>
+					<input className="firstName" type="text" placeholder="First Name" />
+					<input className="lastName" type="text" placeholder="Last Name" />
+					<input className="email" type="text" placeholder="Email" />
+					<input className="phone" type="text" placeholder="Phone Number" />
+					<textarea className="message" placeholder="Message"></textarea>
+					<button type="submit">Contact Me</button>
+				</form>
 			</div>
 		</div>
 	);
