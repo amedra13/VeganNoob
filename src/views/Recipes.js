@@ -3,7 +3,7 @@ import RecipeList from '../components/recipes/RecipeList';
 
 const Recipes = () => {
 	return (
-		<div className="main">
+		<div className="recipesMain">
 			<RecipeList />
 		</div>
 	);

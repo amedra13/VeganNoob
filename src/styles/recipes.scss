@@ -1,3 +1,7 @@
+.recipesMain {
+	padding-top: 130px;
+}
+
 .recipeList {
 	display: flex;
 	flex-direction: column;
@@ -51,6 +55,7 @@
 .foodRecipe {
 	width: 80%;
 	margin: 0 auto;
+	padding-top: 100px;
 }
 
 .recipeHeader {

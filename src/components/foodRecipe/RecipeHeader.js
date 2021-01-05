@@ -7,7 +7,7 @@ const RecipeHeader = ({ recipe }) => {
 	return (
 		<div className="recipeHeader">
 			<div className="recipeHeader__title">
-				<h3>{recipe?.cuisine} Food</h3>
+				<h3>{recipe?.cuisine} Cuisine</h3>
 				<h1>{recipe?.name}</h1>
 			</div>
 			<div className="recipeHeader__prep">
