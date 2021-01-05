@@ -2,25 +2,8 @@
 	box-sizing: border-box;
 	margin: 0;
 }
-$main-color: #77bfa3;
-$second-color: #bfd8bd;
-
-@mixin center-column {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-@mixin center-row {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-@mixin spread-row {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
+@import './global_variables.scss';
+@import './mixin.scss';
 
 .app {
 	background-color: $second-color;
