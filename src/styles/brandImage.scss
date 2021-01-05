@@ -1,16 +1,21 @@
 .brandImage {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	height: 100px;
-	background-color: $main-color;
+	color: white;
+	h1 {
+		font-family: $title-text;
+	}
 	* {
 		margin: 10px;
 	}
-	.links {
+	.brandImage__links {
 		@include center-row;
-	}
-	.hidden {
-		visibility: hidden;
+		font-family: $tab-text;
+		* {
+			color: inherit;
+			text-decoration: none;
+			font-size: 12px;
+		}
 	}
 }

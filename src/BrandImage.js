@@ -6,14 +6,13 @@ const BrandImage = () => {
 	return (
 		<div className="brandImage">
 			<div>
-				<img className="hidden" src={Icon} alt="placeholder" />
+				<img src={Icon} alt="" />
 			</div>
-			<div>
-				<h1>Loi's Version</h1>
-				<h4>My version take on my favorite vegan recipes</h4>
-			</div>
-			<div className="links">
-				<Link to="/recipes">Recipes</Link>
+			<h1>Loi's Version</h1>
+			<div className="brandImage__links">
+				<Link to="/recipes">
+					<h4>Recipes</h4>
+				</Link>
 				<h4>About</h4>
 				<h4>Contact</h4>
 			</div>

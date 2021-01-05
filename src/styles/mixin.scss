@@ -1,3 +1,9 @@
+@mixin spread-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
 @mixin center-column {
 	display: flex;
 	flex-direction: column;
