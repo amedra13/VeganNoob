@@ -19,6 +19,28 @@ const Instructions = ({ steps, ingredients }) => {
 		}
 		return list;
 	};
+
+	const instructionList = (object) => {
+		let list = [];
+		for (let step in object) {
+			list.push(
+				<div key={step}>
+					<h3>{step}</h3>
+
+					{object[step].map((step, i) => (
+						<div key={i} className="step">
+							<div className="step__number">
+								<h6>Step</h6>
+								<h2>{i}</h2>
+							</div>
+							<div className="step__intruc">{step}</div>
+						</div>
+					))}
+				</div>
+			);
+		}
+		return list;
+	};
 	return (
 		<div className="instructions">
 			<div className="instructions__ing">
@@ -29,15 +51,7 @@ const Instructions = ({ steps, ingredients }) => {
 			</div>
 			<div className="instructions__steps">
 				<h1>Steps</h1>
-				{steps?.map((step, i) => (
-					<div key={i} className="step">
-						<div className="step__number">
-							<h6>Step</h6>
-							<h2>{i}</h2>
-						</div>
-						<div className="step__intruc">{step}</div>
-					</div>
-				))}
+				{steps && instructionList(steps)}
 			</div>
 
 			{/* <div className="instruction__links">
