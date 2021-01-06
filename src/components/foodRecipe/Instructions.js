@@ -21,11 +21,8 @@ const Instructions = ({ steps, ingredients, description }) => {
 	};
 	return (
 		<div className="instructions">
-			<div className="instructions__description">
-				<h4>{description}</h4>
-			</div>
 			<div className="instructions__ing">
-				<h1>Ingredients</h1>
+				<h1>Prep Items</h1>
 				<div className="instructions__ingContainer">
 					{ingredients && ingredientList(ingredients)}
 					{/* <div>
