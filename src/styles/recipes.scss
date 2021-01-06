@@ -55,7 +55,9 @@
 .foodRecipe {
 	width: 60%;
 	margin: 0 auto;
-	padding-top: 100px;
+	margin-top: 100px;
+	padding: 10px 20px;
+	border: 2px dashed gray;
 }
 
 .recipeHeader {
@@ -65,7 +67,6 @@
 	}
 	.recipeHeader__intro {
 		border-top: 1px solid black;
-		border-bottom: 1px solid black;
 		width: 100%;
 		display: grid;
 		padding: 10px;

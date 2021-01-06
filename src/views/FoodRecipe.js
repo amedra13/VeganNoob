@@ -20,11 +20,7 @@ const FoodRecipe = () => {
 	return (
 		<div className="foodRecipe">
 			<RecipeHeader recipe={recipe} />
-			<Instructions
-				steps={recipe?.steps}
-				ingredients={recipe?.ingredients}
-				description={recipe?.description}
-			/>
+			<Instructions steps={recipe?.steps} ingredients={recipe?.ingredients} />
 		</div>
 	);
 };
