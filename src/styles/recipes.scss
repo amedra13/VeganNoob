@@ -1,11 +1,13 @@
 .recipesMain {
 	padding-top: 130px;
+	background: linear-gradient(rgb(192, 255, 192), rgba(255, 255, 255, 0.753));
 }
 
 .recipeList {
 	display: flex;
 	flex-direction: column;
 	.recipeList__list {
+		padding-left: 30px;
 		display: flex;
 		flex-wrap: nowrap;
 		overflow-x: scroll;
@@ -16,12 +18,14 @@
 }
 
 .recipeCard {
-	height: 600px;
-	width: 350px;
+	height: 500px;
+	width: 500px;
+	flex-shrink: 0;
 	border-radius: 8px;
+	border: 1px solid gray;
 	margin: 20px 30px;
 	.recipeCard__imgContainer {
-		height: 85%;
+		height: 80%;
 		overflow: hidden;
 		border-radius: 8px;
 		img {
@@ -36,18 +40,22 @@
 	}
 	.recipeCard__description {
 		@include center-column;
+		padding: 15px;
 		font-style: italic;
-		text-decoration: none;
-		height: 15%;
+		height: 20%;
 		text-align: center;
 		.recipeCard__link {
 			text-decoration: none;
 			color: black;
 			font-weight: bold;
 			font-size: 20px;
+			font-family: $header-text;
 			&:hover {
 				text-decoration: underline;
 			}
+		}
+		h6 {
+			font-family: $tab-text;
 		}
 	}
 }

@@ -7,11 +7,11 @@
 
 .app {
 	position: relative;
-	background-color: $second-color;
 	height: 100vh;
 	width: 100vw;
 	overflow-x: hidden;
 	overflow-y: scroll;
+	background: linear-gradient(rgb(192, 255, 192), rgba(255, 255, 255, 0.753));
 }
 .app::-webkit-scrollbar {
 	display: none; /* Safari and Chrome */
