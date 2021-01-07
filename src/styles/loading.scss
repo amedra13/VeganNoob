@@ -1,0 +1,14 @@
+.cardLoading {
+	border: 1px solid rgba(128, 128, 128, 0.568);
+	width: 500px;
+	flex-shrink: 0;
+	margin: 20px 30px;
+	border-radius: 8px;
+	padding: 0 10px;
+	div {
+		padding: 5px 20px;
+	}
+	* {
+		margin-top: 10px;
+	}
+}

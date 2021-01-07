@@ -1,4 +1,6 @@
 import React from 'react';
+import Skeleton from 'react-loading-skeleton';
+
 // import GroupIcon from '@material-ui/icons/Group';
 // import TimerIcon from '@material-ui/icons/Timer';
 // import SignalWifi4BarIcon from '@material-ui/icons/SignalWifi4Bar';
@@ -7,21 +9,21 @@ const RecipeHeader = ({ recipe }) => {
 	return (
 		<div className="recipeHeader">
 			<div className="recipeHeader__title">
-				<h1>{recipe?.name}</h1>
+				<h1>{recipe ? recipe.name : <Skeleton width={250} />}</h1>
 			</div>
 			<div className="recipeHeader__intro">
 				<div className="recipeHeader__info">
 					<div className="timeInfo">
 						<h3>Prep Time</h3>
-						<p>20 min</p>
+						<p>{recipe ? '20 min' : <Skeleton width={100} />}</p>
 					</div>
 					<div className="timeInfo">
 						<h3>Cook Time</h3>
-						<p>30 min</p>
+						<p>{recipe ? '30 min' : <Skeleton width={100} />}</p>
 					</div>
 					<div className="timeInfo">
 						<h3>Total Time</h3>
-						<p>50 min</p>
+						<p>{recipe ? '50 min' : <Skeleton width={100} />}</p>
 					</div>
 					<div className="headerInfo">
 						<div>
