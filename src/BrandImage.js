@@ -1,14 +1,26 @@
 import React from 'react';
 import Icon from './images/icon.png';
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const BrandImage = () => {
+	let home = useLocation().pathname;
+
+	const backgroundStyle = home === '/' ? 'transparent' : 'pink';
+
 	return (
-		<div className="brandImage">
+		<div
+			className="brandImage"
+			style={{ backgroundColor: `${backgroundStyle}` }}
+		>
 			<div>
-				<img src={Icon} alt="" />
+				<Link to="/">
+					<img src={Icon} alt="" />
+				</Link>
 			</div>
-			<h1>Loi's Version</h1>
+			<Link to="/">
+				<h1>Loi's Version</h1>
+			</Link>
 			<div className="brandImage__links">
 				<Link to="/recipes">
 					<h4>Recipes</h4>
