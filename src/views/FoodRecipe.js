@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import RecipeHeader from '../components/foodRecipe/RecipeHeader';
 import Instructions from '../components/foodRecipe/Instructions';
+import RecipeLoading from '../components/loading/RecipeLoading';
 import { useParams } from 'react-router-dom';
 import db from '../database';
 
@@ -17,12 +18,31 @@ const FoodRecipe = () => {
 			});
 	}, [id]);
 
-	return (
-		<div className="foodRecipe">
-			<RecipeHeader recipe={recipe} />
-			<Instructions steps={recipe?.steps} ingredients={recipe?.ingredients} />
-		</div>
-	);
+	let information = null;
+
+	recipe
+		? (information = (
+				<>
+					<RecipeHeader recipe={recipe} />
+					<Instructions
+						steps={recipe?.steps}
+						ingredients={recipe?.ingredients}
+					/>
+				</>
+		  ))
+		: (information = <RecipeLoading />);
+
+	if (recipe) {
+		information = (
+			<>
+				<RecipeHeader recipe={recipe} />
+				<Instructions steps={recipe?.steps} ingredients={recipe?.ingredients} />
+			</>
+		);
+	} else {
+	}
+
+	return <div className="foodRecipe">{information}</div>;
 };
 
 export default FoodRecipe;

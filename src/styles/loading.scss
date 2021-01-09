@@ -12,3 +12,33 @@
 		margin-top: 10px;
 	}
 }
+
+.recipeLoading {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 4fr;
+	div {
+		height: 100%;
+	}
+	div:first-child {
+		grid-column: 1 / span 2;
+	}
+	.recipeLoading__desc {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+
+.recipeLoading__instruc {
+	.loading__header {
+		width: 40%;
+		margin: 0 auto;
+	}
+	.loading__headerList {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+}
