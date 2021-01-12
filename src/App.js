@@ -12,6 +12,7 @@ function App() {
 		<Router>
 			<div className="app">
 				<BrandImage />
+
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route exact path="/recipes" component={Recipes} />

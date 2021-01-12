@@ -15,15 +15,15 @@ const RecipeHeader = ({ recipe }) => {
 				<div className="recipeHeader__info">
 					<div className="timeInfo">
 						<h3>Prep Time</h3>
-						<p>{recipe ? '20 min' : <Skeleton width={100} />}</p>
+						<p>{recipe ? 'BLANK' : <Skeleton width={100} />}</p>
 					</div>
 					<div className="timeInfo">
 						<h3>Cook Time</h3>
-						<p>{recipe ? '30 min' : <Skeleton width={100} />}</p>
+						<p>{recipe ? 'BLANK' : <Skeleton width={100} />}</p>
 					</div>
 					<div className="timeInfo">
 						<h3>Total Time</h3>
-						<p>{recipe ? '50 min' : <Skeleton width={100} />}</p>
+						<p>{recipe ? recipe.cookTime : <Skeleton width={100} />}</p>
 					</div>
 					<div className="headerInfo">
 						<div>

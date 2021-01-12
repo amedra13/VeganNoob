@@ -4,6 +4,7 @@
 }
 @import './global_variables.scss';
 @import './mixin.scss';
+@import './keyframes.scss';
 
 .app {
 	position: relative;
@@ -15,6 +16,12 @@
 }
 .app::-webkit-scrollbar {
 	display: none; /* Safari and Chrome */
+}
+.fade-enter {
+	opacity: 0;
+}
+.fade-active {
+	opacity: 1;
 }
 
 @import './home.scss';

@@ -18,6 +18,8 @@
 }
 
 .recipeCard {
+	border: 1px solid red;
+	animation: fade 500ms forwards ease-in-out;
 	height: 500px;
 	width: 500px;
 	flex-shrink: 0;
@@ -61,6 +63,7 @@
 }
 
 .foodRecipe {
+	animation: fade 800ms forwards ease-in-out;
 	width: 60%;
 	margin: 0 auto;
 	margin-top: 100px;

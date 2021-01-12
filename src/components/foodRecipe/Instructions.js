@@ -8,7 +8,7 @@ const Instructions = ({ steps, ingredients }) => {
 		for (let ing in object) {
 			list.push(
 				<div key={ing}>
-					<h3>{ing}</h3>
+					<h3>{ing === 'ingredients' ? null : ing}</h3>
 					<ul>
 						{object[ing].map((ingred, i) => (
 							<li key={`${ing}_${i}`}>{ingred}</li>
@@ -25,7 +25,7 @@ const Instructions = ({ steps, ingredients }) => {
 		for (let step in object) {
 			list.push(
 				<div key={step}>
-					<h3>{step}</h3>
+					<h3>{step === 'steps' ? null : step}</h3>
 
 					{object[step].map((step, i) => (
 						<div key={i} className="step">
@@ -53,13 +53,6 @@ const Instructions = ({ steps, ingredients }) => {
 				<h1>Steps</h1>
 				{steps && instructionList(steps)}
 			</div>
-
-			{/* <div className="instruction__links">
-				<Button variant="outlined" component={Link} to="/">
-					Home
-				</Button>
-				<Button variant="outlined">Check out Video</Button>
-			</div> */}
 		</div>
 	);
 };

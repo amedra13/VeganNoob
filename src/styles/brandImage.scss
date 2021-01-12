@@ -8,6 +8,7 @@
 	height: 100px;
 	color: white;
 	z-index: 10;
+	transition: all 400ms ease-in-out;
 	h1 {
 		font-size: 40px;
 		font-family: $title-text;

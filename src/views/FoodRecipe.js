@@ -7,6 +7,7 @@ import db from '../database';
 
 const FoodRecipe = () => {
 	const [recipe, setRecipe] = useState(null);
+	// const [showRecipe, setShowRecipe] = useState(false)
 	const { id } = useParams();
 
 	useEffect(() => {

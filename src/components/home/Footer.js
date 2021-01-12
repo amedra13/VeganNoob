@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
-import TwitterIcon from '@material-ui/icons/Twitter';
 
 const Footer = () => {
 	return (
@@ -17,18 +15,23 @@ const Footer = () => {
 					<Link to="/">FAQS</Link>
 				</div>
 				<div className="footer__socialLinks">
-					<div className="footer__icon">
-						<FacebookIcon fontSize="large" />
-					</div>
-					<div className="footer__icon">
+					<h3>Follow me on</h3>
+					<a
+						href="https://www.instagram.com/loiversion/?hl=en"
+						target="_blank"
+						rel="noreferrer"
+						className="footer__icon"
+					>
 						<InstagramIcon fontSize="large" />
-					</div>
-					<div className="footer__icon">
+					</a>
+					<a
+						href="https://www.youtube.com/channel/UC8QHCMs3FkoxlNPsRQKXxbg"
+						target="_blank"
+						rel="noreferrer"
+						className="footer__icon"
+					>
 						<YouTubeIcon fontSize="large" />
-					</div>
-					<div className="footer__icon">
-						<TwitterIcon fontSize="large" />
-					</div>
+					</a>
 				</div>
 			</div>
 			<div className="footer__contact">
