@@ -16,12 +16,6 @@ const CardLoading = () => {
 					<Skeleton count={2} />
 				</div>
 			</div>
-			<div className="cardLoading">
-				<Skeleton height={390} />
-				<div>
-					<Skeleton count={2} />
-				</div>
-			</div>
 		</>
 	);
 };
