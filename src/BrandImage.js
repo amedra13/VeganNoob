@@ -26,7 +26,9 @@ const BrandImage = () => {
 					<h4>Recipes</h4>
 				</Link>
 				<h4>About</h4>
-				<h4>Contact</h4>
+				<Link to="/contact">
+					<h4>Contact</h4>
+				</Link>
 			</div>
 		</div>
 	);

@@ -25,106 +25,39 @@
 }
 
 .footer {
-	display: grid;
-	min-height: 80vh;
-	padding-left: 3%;
-	grid-template-columns: 1fr 1fr;
 	background-color: rgba(255, 255, 255, 0.753);
 	font-family: $tab-text;
+	border: 1px solid rgba(255, 255, 255, 0.753);
 }
 
-.footer__links {
-	.footer__siteLinks {
-		@include spread-column;
-		height: 80%;
-		* {
-			text-decoration: none;
-			transition: all 200ms ease-in-out;
-			color: rgba(92, 92, 92, 0.733);
-			&:hover {
-				color: rgb(197, 197, 197);
-			}
-		}
-	}
-	.footer__socialLinks {
-		@include center-row;
-		height: 20%;
-	}
-	.footer__icon {
-		@include center-row;
-		border-radius: 50%;
-		margin: 0 20px;
-		box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+.footer__siteLinks {
+	@include spread-row;
+	width: 80%;
+	margin: 30px auto;
+	* {
+		text-decoration: none;
 		transition: all 200ms ease-in-out;
-		* {
-			margin: 8px;
-			color: rgba(92, 92, 92, 0.733);
-		}
+		color: rgba(92, 92, 92, 0.733);
 		&:hover {
-			background-color: rgba(144, 255, 181, 0.479);
-			transform: translateY(-7px);
+			color: rgb(197, 197, 197);
 		}
 	}
 }
-.footer__contact {
-	@include center-column;
-	h1 {
-		color: rgba(95, 95, 95, 0.493);
+.footer__socialLinks {
+	@include center-row;
+	margin: 30px 0;
+}
+.footer__icon {
+	@include center-row;
+	border-radius: 50%;
+	margin: 0 20px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+	transition: all 200ms ease-in-out;
+	* {
+		margin: 8px;
+		color: rgba(92, 92, 92, 0.733);
 	}
-	form {
-		width: 100%;
-		height: 50%;
-		display: grid;
-		grid-gap: 10px;
-		padding: 10px;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 5fr;
-		grid-template-areas:
-			'firstName lastName'
-			'email phone'
-			'message message'
-			'button button';
-	}
-	form .firstName {
-		grid-area: firstName;
-	}
-	form .lastName {
-		grid-area: lastName;
-	}
-	form .email {
-		grid-area: email;
-	}
-	form .phone {
-		grid-area: phone;
-	}
-	form .message {
-		grid-area: message;
-	}
-	form input {
-		@include inputStyle;
-		background-color: transparent;
-		border-bottom: 1px solid rgba(92, 92, 92, 0.418);
-	}
-
-	form textarea {
-		@include inputStyle;
-		background-color: rgba(255, 255, 255, 0.363);
-		padding-top: 10px;
-	}
-	form button {
-		font-family: $tab-text;
-		grid-area: button;
-		height: 35px;
-		width: 30%;
-		margin: 0 auto;
-		background-color: transparent;
-		border: 1px solid rgba(92, 92, 92, 0.418);
-		transition: all 200ms ease-in-out;
-		&:hover {
-			background-color: rgba(255, 255, 255, 0.363);
-		}
-		&:focus {
-			outline: none;
-		}
+	&:hover {
+		background-color: rgba(144, 255, 181, 0.479);
 	}
 }

@@ -12,7 +12,8 @@
 	width: 100vw;
 	overflow-x: hidden;
 	overflow-y: scroll;
-	background: linear-gradient(rgb(192, 255, 192), rgba(255, 255, 255, 0.753));
+	// background: linear-gradient(rgb(192, 255, 192), rgba(255, 255, 255, 0.753));
+	background-color: rgb(241, 241, 241);
 }
 .app::-webkit-scrollbar {
 	display: none; /* Safari and Chrome */
@@ -29,3 +30,4 @@
 @import './recipes.scss';
 @import './instructions.scss';
 @import './loading.scss';
+@import './contact.scss';
