@@ -19,19 +19,7 @@ const FoodRecipe = () => {
 			});
 	}, [id]);
 
-	let information = null;
-
-	recipe
-		? (information = (
-				<>
-					<RecipeHeader recipe={recipe} />
-					<Instructions
-						steps={recipe?.steps}
-						ingredients={recipe?.ingredients}
-					/>
-				</>
-		  ))
-		: (information = <RecipeLoading />);
+	let information = <RecipeLoading />;
 
 	if (recipe) {
 		information = (
@@ -40,7 +28,6 @@ const FoodRecipe = () => {
 				<Instructions steps={recipe?.steps} ingredients={recipe?.ingredients} />
 			</>
 		);
-	} else {
 	}
 
 	return <div className="foodRecipe">{information}</div>;
